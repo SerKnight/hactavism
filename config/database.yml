@@ -6,7 +6,6 @@
 development:
   adapter: postgresql
   database: hactavism_development
-  host: localhost
   pool: 5
   timeout: 5000
 
