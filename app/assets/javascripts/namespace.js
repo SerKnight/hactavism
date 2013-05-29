@@ -1,0 +1,3 @@
+window.hacktavism = {
+  Views: {}
+}

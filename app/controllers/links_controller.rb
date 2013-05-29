@@ -11,7 +11,13 @@ class LinksController < ApplicationController
   # GET /links/1.json
   def show
     @link = Link.find(params[:id])
+
+    @video = @link.content[-11..-1]
+
+    @app_id = "fe69d78f"
+    @app_key = "0fab9a3d8553f51f51e8d76989af19d6"
   end
+
 
   # GET /links/new
   def new
