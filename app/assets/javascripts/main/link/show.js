@@ -2,30 +2,34 @@
 
 hacktavism.Views.show = (function () {
 
-  var init = function (api_id, api_key) {
+  var init = function (url) {
 
-    console.log(api_key);
-    console.log(api_id);
+    console.log(url);
 
     $.ajax({
       type: "GET",
       dataType: "json",
-      url: "http://api.charitynavigator.org/api/v1/search/?app_key="+api_key+"&app_id="+api_id+"&field=value"
+      url: url
       }).done(function(data) {
         renderCause(data);
         renderZip(data);
+        renderNames(data);
         console.log(data)
       });
-
   }
 
   var renderCause = function (data) {
-    $(".charity").text(data.objects[0].Cause)
+    $(".cause").text(data.objects[0].Cause)
   };
 
   var renderZip = function (data) {
     var zip = data.objects[0].ZIP;
     $(".zip").text(data.objects[0].ZIP);
+  };
+
+  var renderNames = function (data) {
+    var names = data.objects[0].Charity_Name;
+    $(".charity").text(data.objects[0].Charity_Name);
   };
 
   return {

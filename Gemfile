@@ -10,10 +10,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 gem 'unicorn'
 
-
-group :development do 
+group :development, :test do 
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
 end
 
 gem "therubyracer"

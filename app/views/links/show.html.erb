@@ -2,7 +2,7 @@
 <html>
 <%- model_class = Link -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+  <h3>Video about <%= "#{@link.tags}" %></h3>
 </div>
 
   <body>
@@ -29,7 +29,7 @@
   </div>
    <%= javascript_include_tag "main/link/show" %>
    <script type="text/javascript">
-    hacktavism.Views.show.initialize("<%= @app_id %>", "<%= @app_key %>");
+    hacktavism.Views.show.initialize("<%= @url %>");
    </script>
   </body>
 </html>
