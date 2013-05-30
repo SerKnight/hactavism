@@ -1,38 +1,25 @@
 class LinksController < ApplicationController
   before_action :set_link, only: [:show, :edit, :update, :destroy]
 
-  # GET /links
-  # GET /links.json
   def index
     @links = Link.all
   end
 
-  # GET /links/1
-  # GET /links/1.json
   def show
     @link = Link.find(params[:id])
     @tags = @link.tags.gsub(' ', '+').gsub(',', '')
-    # hello'.gsub(/[eo]/, 'e' => 3, 'o' => '*') 
 
     @url = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&format=json&term=#{@tags}"
-    # @app_id = "fe69d78f"
-    # @app_key = "0fab9a3d8553f51f51e8d76989af19d6"
-    # @app_id = ENV['CHARITY_NAVIGATOR_APP_ID']
-    # @app_key = ENV['CHARITY_NAVIGATOR_KEY']
   end
 
 
-  # GET /links/new
   def new
     @link = Link.new
   end
 
-  # GET /links/1/edit
   def edit
   end
 
-  # POST /links
-  # POST /links.json
   def create
     @link = Link.new(link_params)
 
@@ -47,8 +34,6 @@ class LinksController < ApplicationController
     end
   end
 
-  # PATCH/PUT /links/1
-  # PATCH/PUT /links/1.json
   def update
     respond_to do |format|
       if @link.update(link_params)
@@ -61,8 +46,6 @@ class LinksController < ApplicationController
     end
   end
 
-  # DELETE /links/1
-  # DELETE /links/1.json
   def destroy
     @link.destroy
     respond_to do |format|

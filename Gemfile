@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 gem 'unicorn'
+gem 'capybara'
 
 group :development, :test do 
   gem 'better_errors'

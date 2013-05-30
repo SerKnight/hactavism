@@ -1,8 +1,8 @@
 <%= form_for @link, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :Link, :class => 'control-label' %>
+    <%= f.label "Video Url", :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :content, :class => 'text_field', :placeholder => "Ex.http://www.youtube.com/watch?v=S4JSeQESzKE" %>
+      <%= f.text_field :content, :class => 'text_field', :placeholder => "Ex. http://www.youtube.com/watch?v=S4JSeQESzKE" %>
     </div>
   </div>
   <div class="control-group">
@@ -11,7 +11,12 @@
       <%= f.text_field :tags, :class => 'text_field', :placeholder => "Ex. students, activism, politics" %>
     </div>
   </div>
-
+  <div class="control-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :description, :id => "description", :class => 'text_field', "placeholder" => "Student activism seems to be at an all time low in America. The Occupy Colleges movement continues..." %>
+    </div>
+  </div>
   <div class="form-actions">
     <%= f.submit "Take Action", :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
