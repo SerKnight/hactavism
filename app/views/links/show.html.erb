@@ -3,10 +3,10 @@
   <div class="row">
     <div class="span9">
       <%- model_class = Link -%>
-      <div class="page-header">
-        <h3>Video about <%= "#{@link.tags}" %></h3>
-      </div>
         <%= link_to "Back", links_path, :class => 'btn', :id => "back-button"  %>
+      <div class="page-header">
+        <h2><%= "#{@link.title}" %></h2>
+      </div>
 
         <body>
           <p><%= raw(@link.embed(@link.content)) %></p>
@@ -19,23 +19,13 @@
           <dd><%= @link.tags %></dd>
           
         </dl>
-
-        <div class="form-actions">
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_link_path(@link), :class => 'btn' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      link_path(@link),
-                      :method => 'delete',
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-danger' %>
-        </div>
          <%= javascript_include_tag "main/link/show" %>
          <script type="text/javascript">
           hacktavism.Views.show.initialize("<%= @url %>");
          </script>
     </div>
     <div class="span3">
-      <h2>Activate</h2>
+      <h2>Action</h2>
       <span class="charity"></span>
       <span class="cause"></span>
       <span class="zip"></span>

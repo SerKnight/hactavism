@@ -1,15 +1,15 @@
 <div class="container">
   <div class="row">
-    <div class="span9">
+    <div class="span10">
       <%- model_class = Link -%>
       <div class="page-header">
+        <%= link_to "Submit New Film", new_link_path, :id => "new-button",  :class => 'btn btn-primary' %>
         <h1> Documentary Collection </h1>
       </div>
       <table class="table table-striped">
         <thead>
           <tr>
             <th><%= model_class.human_attribute_name(:id) %></th>
-            <th><%= model_class.human_attribute_name(:content) %></th>
             <th><%= model_class.human_attribute_name(:description) %></th>
             <th><%= model_class.human_attribute_name(:tags) %></th>
             <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -19,7 +19,6 @@
           <% @links.each do |link| %>
             <tr>
               <td><%= link_to link.id, link_path(link) %></td>
-              <td><%= link_to link.content, link_path(link) %></td>
               <td><%= link_to link.description, link_path(link) %></td>
               <td><%= link.tags %></td>
               <td>
@@ -36,12 +35,10 @@
         </tbody>
       </table>
 
-      <%= link_to t('.new', :default => t("helpers.links.new")),
-                  new_link_path,
-                  :class => 'btn btn-primary' %>
+      
 
     </div>
-    <div class="span3">
+    <div class="span2">
       <h2>Documentaries</h2>
       <a>div content</a>
     </div>

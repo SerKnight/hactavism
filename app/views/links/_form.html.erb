@@ -3,6 +3,12 @@
     <div class="span8">
       <%= form_for @link, :html => { :class => 'form-horizontal' } do |f| %>
         <div class="control-group">
+          <%= f.label :title, :class => 'control-label' %>
+          <div class="controls">
+            <%= f.text_field :title, :class => 'text_field', :placeholder => "Student Activism is Dying" %>
+          </div>
+        </div>
+        <div class="control-group">
           <%= f.label "Video Url", :class => 'control-label' %>
           <div class="controls">
             <%= f.text_field :content, :class => 'text_field', :placeholder => "Ex. http://www.youtube.com/watch?v=S4JSeQESzKE" %>
