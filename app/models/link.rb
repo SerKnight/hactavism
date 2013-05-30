@@ -1,16 +1,9 @@
 class Link < ActiveRecord::Base
-  YOUTUBE_REGEXP = /^http:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]*)/
-  VIMEO_REGEXP = /^http:\/\/www\.vimeo\.com\/(\d+)/
 
-  validates :content, :presence => true, :format => 
-  { :with => YOUTUBE_REGEXP || VIMEO_REGEXP, :multiline => true,
-    :message => "Sorry - Only YouTube or Vimeo URL's are allowed"}
-  validates :tags, :presence => true, :length => { :minimum => 3 }
-  validates :description, :length => { :maximum => 250 }
-
-
-
-
+  include ActiveModel::Validations
+  validates_with VideoValidator
+  validates_presence_of :tags, :length => { :minimum => 3 }
+  
 
   def youtube_embed(youtube_url)
     if youtube_url[/yout\.be\/([^\?]*)/]
@@ -19,7 +12,7 @@ class Link < ActiveRecord::Base
       youtube_url[/^.*((v\/)|(embed\/)|(watch\?))\??v?=?([^\&\?]*).*/]
       youtube_id = $5
     end
-    %Q{<iframe title="youTube video player" width="640" height="390" src="http://www.youtube.com/embed/#{ youtube_id }" frameborder="0" allowfullscreen></iframe>}
+    %Q{<iframe title="youTube video player" width="800" height="487.5" src="http://www.youtube.com/embed/#{ youtube_id }" frameborder="0" allowfullscreen></iframe>}
   end
 
 

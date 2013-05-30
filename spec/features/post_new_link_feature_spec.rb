@@ -17,20 +17,16 @@ describe "adding a new video to Hacktavism" do
       visit "/links/new"
       expect(page).to have_content("Video url")
       expect(page).to have_content("Tags")
-      expect(page).to have_content("Description")
+      expect(page).to have_content("Video description")
     end
 
     it "validates the presence of content in each field" do 
       visit "/links/new"
       fill_in("link_content", :with => "")
       fill_in("link_tags", :with => "")
-      fill_in("description", :with => "")
+      fill_in("link_description", :with => "")
       click_button("Take Action")
-      expect(page).to have_content("You Gotta fill in all form fields to post a video")
-    end
-
-    it "validates that there is either a youtube or vimeo url" do 
-
+      expect(page).to_not have_content("Video about")
     end
   end
 end
