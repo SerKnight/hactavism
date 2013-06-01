@@ -12,7 +12,6 @@ hacktavism.Views.show = (function () {
       url: url
       }).done(function(data) {
         renderCause(data);
-        renderZip(data);
         renderNames(data);
         console.log(data)
       });
