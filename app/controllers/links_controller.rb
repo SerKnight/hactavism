@@ -11,6 +11,7 @@ class LinksController < ApplicationController
 
     @url = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&format=json&term=#{@tags}"
     # @charity = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&orgid=<EIN>"
+    # @volunteer = Volunteer
   end
 
   def new

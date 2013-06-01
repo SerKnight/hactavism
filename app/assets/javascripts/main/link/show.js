@@ -1,5 +1,4 @@
 //= require namespace
-
 hacktavism.Views.show = (function () {
 
   var init = function (url) {
@@ -12,6 +11,7 @@ hacktavism.Views.show = (function () {
       url: url
       }).done(function(data) {
         renderCause(data);
+        renderZip(data);
         renderNames(data);
         console.log(data)
       });
@@ -36,3 +36,4 @@ hacktavism.Views.show = (function () {
   }
 
 }());
+

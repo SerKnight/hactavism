@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 gem 'unicorn'
 gem 'capybara'
+gem 'httparty'
 
 group :development, :test do 
   gem 'better_errors'
