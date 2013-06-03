@@ -12758,7 +12758,6 @@ hacktavism.Views.show = (function () {
       url: url
       }).done(function(data) {
         renderCause(data);
-        renderZip(data);
         renderNames(data);
         console.log(data)
       });
@@ -12766,11 +12765,6 @@ hacktavism.Views.show = (function () {
 
   var renderCause = function (data) {
     $(".cause").text(data.objects[0].Cause)
-  };
-
-  var renderZip = function (data) {
-    var zip = data.objects[0].ZIP;
-    $(".zip").text(data.objects[0].ZIP);
   };
 
   var renderNames = function (data) {

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="span10">
+    <div class="span9">
       <%- model_class = Link -%>
       <div class="page-header">
         <%= link_to "Submit New Film", new_link_path, :id => "new-button",  :class => 'btn btn-primary' %>
@@ -38,9 +38,8 @@
       
 
     </div>
-    <div class="span2">
-      <h2>Documentaries</h2>
-      <a>div content</a>
+    <div class="span3", id="side-pic">
+        <%= image_tag('hacker.jpg', :size => "500x500")%>
     </div>
   </div>
 </div>

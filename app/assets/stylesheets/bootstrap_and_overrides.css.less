@@ -35,11 +35,26 @@ body { padding-top: 60px; }
   padding-left:210px;
 }
 
+@blue: #8ED8F0;
+@red: #d95252;
+@orange: #FEA879;
+@green: #43C9A6;
+@gray: #535A6C;
+@dark: #2E2D3B;
+@light: #cbd7e0;
+
 .toph{
   border:10px solid;
   float:right;
   margin-bottom:100px;
 }
+
+#side-pic{
+  margin-top:200px;
+}
+
+
+
 
 .name{
   float:right;
@@ -48,6 +63,7 @@ body { padding-top: 60px; }
 .link{
   color:blue;
 }
+
 
 h3{
   font-family: 'Source Code Pro', sans-serif;
@@ -96,4 +112,77 @@ h4{
 
 .description{
   
+}
+
+@blue: #8ED8F0;
+@red: #d95252;
+@orange: #FEA879;
+@green: #43C9A6;
+@gray: #535A6C;
+@dark: #2E2D3B;
+@light: #cbd7e0;
+
+@linkColor: @blue;
+@headingsFontWeight: normal;
+@headingsColor: #FFF;
+
+html{
+}
+
+html{
+  background-image:('mulan.png');
+}
+
+.main{
+  color:@gray;
+  margin-top:40px;
+}
+
+.navbar {
+  border:10px;
+  border-bottom: @red solid 10px;
+}
+
+.navbar-inner{
+  background: @dark;
+  border:none;
+  height:50px;
+}
+.heading {
+  height: 100px;
+  padding-top:40px;
+  background: @gray;
+}
+
+h1 {
+  color:black;
+}
+
+h2{
+  color:black;
+}
+
+h4{
+  color:@red;
+}
+
+h3{
+  color:@red;
+}
+
+h5{
+  color:@red;
+}
+
+.navbar a.brand {
+  color: white; 
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size:200%;
+}
+
+.navbar .nav li a{
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size:120%;
+  padding-left:150px;
 }
