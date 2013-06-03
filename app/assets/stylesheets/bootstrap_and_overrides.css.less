@@ -31,6 +31,18 @@ body { padding-top: 60px; }
 // Example:
 // @linkColor: #ff0000;
 
+@blue: #8ED8F0;
+@red: #d95252;
+@orange: #FEA879;
+@green: #43C9A6;
+@gray: #535A6C;
+@dark: #2E2D3B;
+@light: #cbd7e0;
+
+@linkColor: @blue;
+@headingsFontWeight: normal;
+@headingsColor: #FFF;
+
 .page-header{
   padding-left:210px;
 }
@@ -52,8 +64,6 @@ body { padding-top: 60px; }
 #side-pic{
   margin-top:200px;
 }
-
-
 
 
 .name{
@@ -85,25 +95,30 @@ h4{
   margin-left: -10px;
 }
 
+li .link{
+  color: rgb(197, 10, 10);
+}
+
+.world{
+  background-image:url('internet.png');
+  background-image-size:150%;
+}
 
 #back-button{
   margin-right:100px;
   margin-top:20px;
+  color:@dark;
   float:right;
 }
 #new-button{
   float:right;
-  color:white;
-   margin-right:100px;
+  color:@dark;
+  margin-right:100px;
   margin-top:20px;
 }
 
-
-
-#guidelines{
-  li{
-    margin-top:8px;
-  }
+.title{
+  text-decoration:underline;
 }
 
 .text_field{
@@ -114,17 +129,7 @@ h4{
   
 }
 
-@blue: #8ED8F0;
-@red: #d95252;
-@orange: #FEA879;
-@green: #43C9A6;
-@gray: #535A6C;
-@dark: #2E2D3B;
-@light: #cbd7e0;
 
-@linkColor: @blue;
-@headingsFontWeight: normal;
-@headingsColor: #FFF;
 
 html{
 }
@@ -154,12 +159,19 @@ html{
   background: @gray;
 }
 
-h1 {
-  color:black;
+.docs{
+  padding-right:400px;
 }
 
-h2{
+
+h1 {
   color:black;
+  font-family: 'Share Tech Mono', sans-serif; 
+}
+
+h2 {
+  color:black;
+  font-family: 'Share Tech Mono', sans-serif; 
 }
 
 h4{
