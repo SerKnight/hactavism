@@ -15,6 +15,7 @@
           </tr>
         </thead>
         <tbody>
+        <%= paginate @links %>
           <% @links.each do |link| %>
             <tr>
               <td><h5><%= link_to link.title, link_path(link) %></h5></td>

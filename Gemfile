@@ -12,6 +12,8 @@ gem 'unicorn'
 gem 'capybara'
 gem 'faraday'
 gem 'selenium-webdriver'
+gem 'kaminari'
+
 
 group :development, :test do 
   gem 'better_errors'

@@ -7,7 +7,7 @@ class VideoValidator < ActiveModel::Validator
     end
   end
   YOUTUBE_REGEXP = /^(?:http:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})/
-  VIMEO_REGEXP = /^(?:http:\/\/)?(?:www\.)?vimeo\.com\/\d{8}(?=\b|\/)/  
+  VIMEO_REGEXP = /^(?:http:\/\/)?(?:www\.)?vimeo\.com\/\d{6,8}(?=\b|\/)/  
 
   # \d{1,45}/
 
