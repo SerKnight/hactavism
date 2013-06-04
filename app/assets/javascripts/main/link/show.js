@@ -17,12 +17,14 @@ hacktavism.Views.show = (function () {
   }
 
   var renderCause = function (data) {
-    $(".cause").text(data.objects[0].Cause)
+    $(".cause").html('<a href="http://google.com/search?q=' + data.objects[0].Cause + '" target="_blank">' + data.objects[0].Cause + '</a>')
   };
+
+
 
   var renderNames = function (data) {
     var names = data.objects[0].Charity_Name;
-    $(".charity").text(data.objects[0].Charity_Name);
+    $(".charity").html('<a href="http://google.com/search?q=' + data.objects[0].Charity_Name + '" target="_blank">' + data.objects[0].Charity_Name + '</a>')
   };
 
   return {
@@ -30,4 +32,7 @@ hacktavism.Views.show = (function () {
   }
 
 }());
+
+
+
 
