@@ -29,8 +29,7 @@
       </br>
         <div class="form-actions">
           <%= f.submit "Take Action", :class => 'btn btn-primary' %>
-          <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                      links_path, :class => 'btn' %>
+          <%= link_to "Cancel", links_path, :class => 'btn btn-cancel' %>
         </div>
       <% end %>
     </div>
