@@ -21,7 +21,8 @@ class LinksController < ApplicationController
 
 
     # @volunteer_options = VolunteerMatch.new.get_charity(@tags)
-    @volunteer_options = [ VolunteerOption.new("Starcraft Bootcamp","htttp://startcraft.com") ]
+    @volunteer_option1 = [ VolunteerOption.new("Boys & Girls Club","http://www.bgca.org/whoweare/Pages/FindaClub.aspx") ]
+    @volunteer_option2 = [ VolunteerOption.new("Red Cross Volunteer","http://www.redcross.org/support/volunteer") ]
 
     @url = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&format=json&term=#{@tags}"
     # @charity = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&orgid=<EIN>"
