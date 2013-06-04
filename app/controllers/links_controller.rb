@@ -29,7 +29,7 @@ class LinksController < ApplicationController
   end
 
   def root
-    @last_link = Link.last
+    @link = Link.last
   end
 
   def new

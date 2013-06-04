@@ -7,8 +7,8 @@
       </div>
     </div>
     <div class="span9">
-        <h3><%= link_to @last_link.title.capitalize, link_path(@last_link.id) %></h3><p><%= @last_link.description %></p>
-       <%= raw(@last_link.embed(@last_link.content)) %>
+        <h3><%= link_to @link.title.capitalize, links_path, { :class=>"home-link" } %></h3>
+       <%= raw(@link.embed(@link.content)) %>
     </div>
     <div class="span3">
       <table class="table table-striped">

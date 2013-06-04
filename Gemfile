@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 1.0.1'
 gem 'unicorn'
 gem 'capybara'
 gem 'faraday'
+gem 'selenium-webdriver'
 
 group :development, :test do 
   gem 'better_errors'

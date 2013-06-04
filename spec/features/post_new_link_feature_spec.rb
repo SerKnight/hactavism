@@ -2,11 +2,6 @@ require 'spec_helper'
 
 describe "adding a new video to Hacktavism" do 
   context "when I visit the home page" do 
-    it "there is a navbar with the options to post & watch videos" do 
-      visit "/"
-      expect(page).to have_content("Submit Content")
-      expect(page).to have_content("Watch Documentaries")
-    end
 
     it "when I post content there is an option to post a new video" do 
       visit "/links/new"
