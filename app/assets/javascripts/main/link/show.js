@@ -24,7 +24,7 @@ hacktavism.Views.show = (function () {
 
   var renderNames = function (data) {
     var names = data.objects[0].Charity_Name;
-    $(".charity").html('<a href="http://google.com/search?q=' + data.objects[0].Charity_Name + '" target="_blank">' + data.objects[0].Charity_Name + '</a>')
+    $(".charity").html('<a href="http://google.com/search?q=' + data.objects[0].Charity_Name + '" target="_blank">' + data.objects[0].Charity_Name + '</a>' + "<br/><br/>" + '<a href="http://google.com/search?q=' + data.objects[1].Charity_Name + '" target="_blank">' + data.objects[1].Charity_Name + '</a>')
   };
 
   return {
