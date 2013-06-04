@@ -5,13 +5,31 @@ class LinksController < ApplicationController
     @links = Link.all
   end
 
+
+  class VolunteerOption
+    def initialize(name,url)
+      @name = name
+      @url = url
+    end
+
+    attr_accessor :name, :url
+  end
+
   def show
     @link = Link.find(params[:id])
     @tags = @link.tags.gsub(' ', '+').gsub(',', '')
 
+
+    # @volunteer_options = VolunteerMatch.new.get_charity(@tags)
+    @volunteer_options = [ VolunteerOption.new("Starcraft Bootcamp","htttp://startcraft.com") ]
+
     @url = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&format=json&term=#{@tags}"
     # @charity = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&orgid=<EIN>"
     # @volunteer = VolunteerMatch.new.get_charity(@tags)
+  end
+
+  def root
+    @last_link = Link.last
   end
 
   def new

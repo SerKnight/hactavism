@@ -1,10 +1,16 @@
 
 <div class="container">
   <div class="row">
-    <div class="span9">
+    <div class="span12">
       <div class="page-header">
-        <h3> Online Documentaries to Inspire Action</h>
+        <h2> Online Documentaries to Inspire Action</h2>
       </div>
+    </div>
+    <div class="span9">
+        <h3><%= link_to @last_link.title.capitalize, link_path(@last_link.id) %></h3><p><%= @last_link.description %></p>
+       <%= raw(@last_link.embed(@last_link.content)) %>
+    </div>
+    <div class="span3">
       <table class="table table-striped">
         <thead>
           <tr>
@@ -13,12 +19,12 @@
         </thead>
         <tbody>
             <tr>
-              <td>Hactavism is the use of internet technology to promote free speech, human rights, and information ethics. <hr/> This site's intent is to connect you with outlets for action after you watch a video that strikes you as important.<hr/> I encourage you watch the documentaries and ACT on these the movements you find most important. </td>
-               
+              <td>Hactavism is the use of internet technology to promote free speech, human rights, and information ethics. <hr/> You will find insprigin videos that will connect you with outlets for action and actavism.<hr/> </td>
               </td>
             </tr>
         </tbody>
       </table>
+
       <table class="table table-striped">
         <thead>
           <tr>
@@ -35,17 +41,11 @@
                       <li> You can share this website with your friends, or family.</ol>  
                         <hr/> 
                   </td>
-               
               </td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="span3">
-      <h2></h2>
-      <p class="about"><%= image_tag "video.jpg" %></p>
-    </div>
-<!-- <p class="world"><%= image_tag "internet.png" %></p> -->
   </div>
 </div>
 
