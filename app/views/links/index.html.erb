@@ -17,7 +17,7 @@
         <tbody>
           <% @links.each do |link| %>
             <tr>
-              <td><h4><%= link_to link.title, link_path(link) %></h4></td>
+              <td><h5><%= link_to link.title, link_path(link) %></h5></td>
               <td><%= link_to link.description, link_path(link) %></td>
               <td><%= link.tags %></td>
               <td>
@@ -32,6 +32,11 @@
     </div>
     <div class="span3", id="side-pic">
         <%= image_tag('hacker.jpg', :size => "500x500")%>
+        <%= image_tag('internet.png', :size => "500x500")%>
+        <%= image_tag('hacker.jpg', :size => "500x500")%>
+        <%= image_tag('internet.png', :size => "500x500")%>
+        <%= image_tag('hacker.jpg', :size => "500x500")%>
+        <%= image_tag('internet.png', :size => "500x500")%>
     </div>
   </div>
 </div>
