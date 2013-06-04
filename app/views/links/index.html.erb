@@ -15,7 +15,6 @@
           </tr>
         </thead>
         <tbody>
-        <%= paginate @links %>
           <% @links.each do |link| %>
             <tr>
               <td><h5><%= link_to link.title, link_path(link) %></h5></td>
@@ -27,9 +26,7 @@
           <% end %>
         </tbody>
       </table>
-
-      
-
+        <%= paginate @links %>
     </div>
     <div class="span3", id="side-pic">
         <%= image_tag('hacker.jpg', :size => "500x500")%>
