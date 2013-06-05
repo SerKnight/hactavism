@@ -19,14 +19,11 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
     @tags = @link.tags.gsub(' ', '+').gsub(',', '')
 
-
     # @volunteer_options = VolunteerMatch.new.get_charity(@tags)
     @volunteer_option1 = [ VolunteerOption.new("Boys & Girls Club","http://www.bgca.org/whoweare/Pages/FindaClub.aspx") ]
     @volunteer_option2 = [ VolunteerOption.new("Red Cross Volunteer","http://www.redcross.org/support/volunteer") ]
 
     @url = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&format=json&term=#{@tags}"
-    # @charity = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&orgid=<EIN>"
-    # @volunteer = VolunteerMatch.new.get_charity(@tags)
   end
 
   def root
@@ -75,12 +72,10 @@ class LinksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_link
       @link = Link.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def link_params
       params.require(:link).permit(:content, :tags, :description, :title)
     end

@@ -23,12 +23,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="/">Hacktivism</a>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Submit Content", new_link_path %></li>
-            <li><%= link_to "Watch Documentaries", links_path %></li>
-            <li><%= link_to "Hactivists", hactavists_path %></li>
+            <li><%= link_to "Watch Documentaries", links_path, :class => "font" %></li>
+            <li><%= link_to "Submit Content", new_link_path, :class => "font" %></li>
+            <li><%= link_to "Hactivists", hactavists_path, :class => "font" %></li>
+        <a class="brand" href="/">Hacktivism<%= image_tag "video.png", :size => '33x33', :class => "video" %></a>
+
           </ul>
         </div>
       </div>

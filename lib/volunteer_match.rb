@@ -18,15 +18,22 @@ class VolunteerMatch
     end
   end
 
+  def sha_and_base64_encode(input)
+    Base64.encode64(Digest::SHA2.new.digest(input)).strip
+  end
+
   def generate_nonce
-    rand(10 ** 30).to_s.rjust(30,'0')
+    num_as_string = rand(10 ** 30).to_s.rjust(30,'0')
+    sha_and_base64_encode(num_as_string)
   end
 
   # PasswordDigest = Base64 ( SHA256 ( nonce + creation time + API key) )
   def generate_password_digest(nonce,time,api_key)
-    raw_digest = [ nonce, time, api_key ].join("")
-    OpenSSL::Digest::Digest.new("sha256").base64digest(raw_digest)
+    raw_input = [ nonce, time, api_key ].map(&:strip).join("")
+    sha_and_base64_encode(raw_input)
   end
+  # OpenSSL::Digest::Digest.new("sha256").base64digest(raw_digest)
+  # Base64.encode64(OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha256'), key, raw_digest)).strip()
 
   def get_charity(tags)
     username = "SerKnight"
@@ -53,6 +60,8 @@ class VolunteerMatch
     password_digest = generate_password_digest(nonce,created,api_key)
 
     response = conn.get "api/call?action=helloWorld", { query: { name: "Chris" }.to_json } do |request|
+      request.headers['Host'] = "www.volunteermatch.org"
+      request.headers['Accept-Charset'] = "UTF-8"
       request.headers['Content-Type'] = 'application/json'
       request.headers['Authorization'] = %{WSSE profile="UsernameToken"}
       request.headers['X-WSSE'] = %{UsernameToken Username="#{username}", PasswordDigest="#{password_digest}", Nonce="#{nonce}", Created="#{created}"}

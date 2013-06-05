@@ -19,7 +19,7 @@ class Link < ActiveRecord::Base
   def vimeo_embed(vimeo_url)
     vimeo_id = vimeo_url[-8..-1]
 
-    %Q{<iframe id="moog" src="http://player.vimeo.com/video/#{ vimeo_id }" width="640" height="390" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>} 
+    %Q{<iframe id="moog" src="http://player.vimeo.com/video/#{ vimeo_id }" width="800" height="487.5" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>} 
   end
 
 

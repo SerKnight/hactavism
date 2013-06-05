@@ -2,12 +2,12 @@
 <div class="container">
   <div class="row">
     <div class="span12">
-      <div class="page-header">
+      <div class="root-header">
         <h2> Online Documentaries to Inspire Action</h2>
       </div>
     </div>
     <div class="span9">
-        <h3><%= link_to @link.title.capitalize, links_path, { :class=>"home-link" } %></h3>
+        <h4><%= link_to @link.title.capitalize, links_path, { :class=>"home-link" } %></h4>
        <%= raw(@link.embed(@link.content)) %>
     </div>
     <div class="span3">
