@@ -2,7 +2,7 @@ class LinksController < ApplicationController
   before_action :set_link, only: [:show, :edit, :update, :destroy]
 
   def index
-    @links = Link.order('created_at DESC').page(params[:page]).per(13)
+    @links = Link.order('created_at DESC').page(params[:page]).per(12)
   end
 
 
