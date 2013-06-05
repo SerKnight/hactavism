@@ -13,6 +13,7 @@ gem 'capybara'
 gem 'faraday'
 gem 'selenium-webdriver'
 gem 'kaminari'
+gem 'simplecov'
 
 
 group :development, :test do 

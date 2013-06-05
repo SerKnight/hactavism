@@ -32,8 +32,12 @@ context "Vimeo video validation" do
     expect(subject.valid_url?("http://vimeocom/65099905")).to eq false
   end
 
-  it "recognizes the length of a video code on the end" do 
-    expect(subject.valid_url?("http://www.vimeo.com/1234567")).to eq false
+  it "recognizes the vimeo with 7 digits is legit" do 
+    expect(subject.valid_url?("http://www.vimeo.com/1234567")).to eq true
+  end
+
+  it "recognizes the vimeo vid without valid numbers" do 
+    expect(subject.valid_url?("http://www.vimeo.com/12345")).to eq false
   end
 
   it "allows videos to be embedded without the http:// or www." do
