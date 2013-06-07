@@ -5,8 +5,9 @@ http://Hacktivism.herokuapp.com
 
 Open issues for further development.
   
-  - VolunteerMatch API still getting a 401 Authorization error when sending HTTP request for the HelloWorld call
-      * http://standardforgood.files.wordpress.com/2012/10/vm-public-use-api-user-manual.pdf
+  - hactavism/lib/volunteer_match.rb
+    - VolunteerMatch API still getting a 401 Authorization error when sending HTTP request for the HelloWorld call
+        * http://standardforgood.files.wordpress.com/2012/10/vm-public-use-api-user-manual.pdf
 
   - Validations
     - Update the form validations to display flash messages for success 
