@@ -9,8 +9,7 @@ class VideoValidator < ActiveModel::Validator
   YOUTUBE_REGEXP = /^(?:http:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})/
   VIMEO_REGEXP = /^(?:http:\/\/)?(?:www\.)?vimeo\.com\/\d{6,8}(?=\b|\/)/  
 
-  # \d{1,45}/
-
+  # \d{1,45}/s
 
   def valid_url?(url)
     !!(YOUTUBE_REGEXP =~ url) | !!(VIMEO_REGEXP =~ url)
