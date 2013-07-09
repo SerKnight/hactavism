@@ -5,7 +5,6 @@ class LinksController < ApplicationController
     @links = Link.order('created_at DESC').page(params[:page]).per(12)
   end
 
-
   class VolunteerOption
     def initialize(name,url)
       @name = name
