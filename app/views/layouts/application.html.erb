@@ -28,7 +28,7 @@
             <li><%= link_to "Watch Documentaries", links_path, :class => "font" %></li>
             <li><%= link_to "Submit Content", new_link_path, :class => "font" %></li>
             <li><%= link_to "Hacktivists", hactavists_path, :class => "font" %></li>
-        <a class="brand" href="/">Hacktivism<%= image_tag "video.png", :size => '33x33', :class => "video" %></a>
+            <a class="brand" href="/">Hacktivism<%= image_tag "video.png", :size => '33x33', :class => "video" %></a>
           </ul>
         </div>
       </div>
@@ -36,6 +36,7 @@
   </div>
 </div>
 <%= yield %>
+  <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51dc6bb63a2a55c6&domready=1"></script>
   <script type="text/javascript">
     var disqus_shortname = 'SerKnight';
 
@@ -46,6 +47,6 @@
         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
-  </script>
+  </script> 
 </body>
 </html>
