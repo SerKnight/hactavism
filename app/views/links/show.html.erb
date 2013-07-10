@@ -10,7 +10,7 @@
         <body>
           <%#= link_to "Facebook Share", @facebook_share, :target => "_blank" %>
           <a id="facebook-share" href="https://www.facebook.com/sharer/sharer.php?u='<%= @link.content %>')"><%= image_tag "facebook.png" %></a>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en"><%= image_tag "twitter.png" %></a>
+          <a id="twitter-share" class="twitter-share-button" href="https://twitter.com/share?url="><%= image_tag "twitter.png" %></a>
           <p><%= raw(@link.embed(@link.content)) %></p>
 
           <script>
@@ -19,21 +19,37 @@
                 event.preventDefault();
                 console.log("facebook sharing");
                 var url = $(this).attr('href');
-                window.open(url,'facebook-share-box','width=626,height=336');
+                alert(url)
+                var page_url = location.href
+                window.open(url+encodeURIComponent(location.href),'facebook-share-box','width=626,height=336');
               });
 
               $("#twitter-share").on("click",function(event) {
                 event.preventDefault();
-                // var link = $('.dl-horizontal dd')
-                // console.log(link)
-                var url = $(this).attr('href'));
-                window.open((url + encodeURIComponent('<%= @link.content %>')), 'twitter-share-button', 'width=626,height=336');
+                var twitter_url = $(this).attr('href');
+                var page_url = location.href
+                alert(page_url)
+                var twitter_handle = ' via @Nomadic_Knight';
+                alert(encodeURIComponent(page_url))
+                window.open('http://twitter.com/share?text='+encodeURIComponent(page_url)+twitter_handle,'twitter-share-box','toolbar=0,status=0,width=626,height=436'); 
+                return false;
               });
             });
           </script>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">
-
-
+          <!-- <a href="#" 
+            onclick="
+              window.open(
+                'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+                'facebook-share-dialog', 
+                'width=626,height=436'); 
+              return false;">
+            Share on Facebook
+          </a> -->
+          <!-- function twit_click() { 
+              var u="https://www.website.com/userid"; 
+              var t="sometext"; 
+              window.open('http://twitter.com/share?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),'twitsharer','toolbar=0,status=0,width=626,height=436'); 
+              return false;  -->   
 
 
         <dl class="dl-horizontal">
@@ -61,7 +77,6 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        
     </div>
     <div class="span3">
       <li><h3>Video Description</h3>

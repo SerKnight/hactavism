@@ -17,6 +17,8 @@ class LinksController < ApplicationController
   def show
     @link = Link.find(params[:id])
     @tags = @link.tags.gsub(' ', '+').gsub(',', '')
+    @tweet_text = URI.escape "#{@link.title} => #{@link.content}via #{@Nomadic_Knight}"
+    
 
     # @facebook_share = "http://www.facebook.com/sharer/sharer.php?u=" + @link.content + "width=600,height=600"
     # @twitter_share = http://twitter.com/home?status=
