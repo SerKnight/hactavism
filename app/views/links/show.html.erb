@@ -1,7 +1,3 @@
-<script type="text/javascript">
-var addthis_config = {"data_track_addressbar":true};
-addthis:url
-</script>
 <!DOCTYPE html>
 <div class="container">
   <div class="row">
@@ -12,9 +8,32 @@ addthis:url
         <h2><%= "#{@link.title}" %></h2>
       </div>
         <body>
-          <%= link_to "Facebook Share", @facebook_share, :target => "_blank" %>
-          <%= link_to "Twitter Share", @twitter_share, :target => "_blank" %>
+          <%#= link_to "Facebook Share", @facebook_share, :target => "_blank" %>
+          <a id="facebook-share" href="https://www.facebook.com/sharer/sharer.php?u='<%= @link.content %>')"><%= image_tag "facebook.png" %></a>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en"><%= image_tag "twitter.png" %></a>
           <p><%= raw(@link.embed(@link.content)) %></p>
+
+          <script>
+            $(function() {
+              $("#facebook-share").on("click",function(event) {
+                event.preventDefault();
+                console.log("facebook sharing");
+                var url = $(this).attr('href');
+                window.open(url,'facebook-share-box','width=626,height=336');
+              });
+
+              $("#twitter-share").on("click",function(event) {
+                event.preventDefault();
+                // var link = $('.dl-horizontal dd')
+                // console.log(link)
+                var url = $(this).attr('href'));
+                window.open((url + encodeURIComponent('<%= @link.content %>')), 'twitter-share-button', 'width=626,height=336');
+              });
+            });
+          </script>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">
+
+
 
 
         <dl class="dl-horizontal">

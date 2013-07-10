@@ -18,7 +18,7 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
     @tags = @link.tags.gsub(' ', '+').gsub(',', '')
 
-    @facebook_share = "http://www.facebook.com/sharer/sharer.php?u=" + @link.content
+    # @facebook_share = "http://www.facebook.com/sharer/sharer.php?u=" + @link.content + "width=600,height=600"
     # @twitter_share = http://twitter.com/home?status=
 
     # @volunteer_options = VolunteerMatch.new.get_charity(@tags)
