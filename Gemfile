@@ -14,6 +14,8 @@ gem 'faraday'
 gem 'selenium-webdriver'
 gem 'kaminari'
 gem 'simplecov'
+gem 'underscore-rails'
+
 
 
 group :development, :test do 
