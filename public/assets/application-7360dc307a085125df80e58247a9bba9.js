@@ -12747,7 +12747,6 @@ $(document).ready(function(){
   });
 });
 
-underscore
 var $filteredByTitle = _.sortBy($docs, function (doc){
   return $(doc).data('title');
 })
