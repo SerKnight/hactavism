@@ -17,8 +17,10 @@
         <tbody>
           <% @links.each do |link| %>
             <tr>
-              <td><h5><%= link_to link.title, link_path(link) %></h5></td>
-              <td><%= link_to link.description, link_path(link) %></td>
+              <div class="color-text">
+                <td><h5><%= link_to link.title, link_path(link) %></h5></td>
+                <td><%= link_to link.description, link_path(link) %></td>
+              </div>
               <td><%= link.tags %></td>
               <td>
               </td>
