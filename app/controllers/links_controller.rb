@@ -20,10 +20,6 @@ class LinksController < ApplicationController
     @tweet_text = URI.escape "#{@link.title} => #{@link.content}via #{@Nomadic_Knight}"
     
 
-    # @facebook_share = "http://www.facebook.com/sharer/sharer.php?u=" + @link.content + "width=600,height=600"
-    # @twitter_share = http://twitter.com/home?status=
-
-    # @volunteer_options = VolunteerMatch.new.get_charity(@tags)
     @volunteer_option1 = [ VolunteerOption.new("Boys & Girls Club","http://www.bgca.org/whoweare/Pages/FindaClub.aspx") ]
     @volunteer_option2 = [ VolunteerOption.new("Red Cross Volunteer","http://www.redcross.org/support/volunteer") ]
 
