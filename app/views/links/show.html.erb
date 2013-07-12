@@ -10,10 +10,11 @@
         <body>
           <%#= link_to "Facebook Share", @facebook_share, :target => "_blank" %>
           <a id="facebook-share" href="https://www.facebook.com/sharer/sharer.php?u='<%= @link.content %>')"><%= image_tag "facebook.png" %></a>
+
           <a id="twitter-share" class="twitter-share-button" href="https://twitter.com/share?url="><%= image_tag "twitter.png" %></a>
 
+          <a id="reddit-share" class="reddit-share-button" href="http://www.reddit.com/submit?url="><%= image_tag "reddit.png" %></a>
           <p><%= raw(@link.embed(@link.content)) %></p>
-
         <dl class="dl-horizontal">
           <dt><strong><%= model_class.human_attribute_name(:content) %>:</strong></dt>
           <dd><%= @link.content %></dd>

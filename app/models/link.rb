@@ -1,5 +1,17 @@
 class Link < ActiveRecord::Base
 
+  before_save :default_values
+  def default_values
+    self.score = 0
+    self.points = 0
+  end
+
+
+  def upvote
+    
+  end
+
+
   include ActiveModel::Validations
   validates_with VideoValidator
   validates_presence_of :tags, :length => { :minimum => 3 }
