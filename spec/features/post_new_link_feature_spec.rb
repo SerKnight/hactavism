@@ -26,4 +26,3 @@ describe "adding a new video to Hacktavism" do
   end
 end
 
-# fill_in('First Name', :with => 'John')

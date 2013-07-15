@@ -1,12 +1,12 @@
 //= require namespace
 //= require controls/social
 //= require controls/disqus
+//= require controls/reddit
 hacktavism.Views.show = (function () {
 
   var init = function (url) {
 
     disqus(); 
-    console.log(url);
 
     $.ajax({
       type: "GET",
@@ -15,7 +15,6 @@ hacktavism.Views.show = (function () {
       }).done(function(data) {
         renderCause(data);
         renderNames(data);
-        console.log(data)
       });
   }
 
@@ -41,7 +40,3 @@ hacktavism.Views.show = (function () {
   }
 
 }());
-
-
-
-
