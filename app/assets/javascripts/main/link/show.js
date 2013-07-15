@@ -1,6 +1,5 @@
 //= require namespace
 //= require controls/social
-//= require controls/disqus
 //= require controls/reddit
 hacktavism.Views.show = (function () {
 
