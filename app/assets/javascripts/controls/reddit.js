@@ -1,5 +1,4 @@
 $(function() {
- 
   $("#reddit-share").on("click",function(event) {
     event.preventDefault();
     var reddit_url = $(this).attr('href');

@@ -2,26 +2,26 @@
 <div class="container">
   <div class="row">
     <div class="span9">
-      <%- model_class = Link -%>
         <%= link_to "Back", links_path, :class => 'btn', :id => "back-button"  %>
       <div class="doc-title">
         <h2><%= "#{@link.title}" %></h2>
       </div>
         <body>
-          <%#= link_to "Facebook Share", @facebook_share, :target => "_blank" %>
           <a id="facebook-share" href="https://www.facebook.com/sharer/sharer.php?u='<%= @link.content %>')"><%= image_tag "facebook.png" %></a>
 
           <a id="twitter-share" class="twitter-share-button" href="https://twitter.com/share?url="><%= image_tag "twitter.png" %></a>
 
           <a id="reddit-share" class="reddit-share-button" href="http://www.reddit.com/submit?url="><%= image_tag "reddit.png" %></a>
+
           <p><%= raw(@link.embed(@link.content)) %></p>
+
         <dl class="dl-horizontal">
-          <dt><strong><%= model_class.human_attribute_name(:content) %>:</strong></dt>
+          <dt><strong>Content:</strong></dt>
           <dd><%= @link.content %></dd>
-          <dt><strong><%= model_class.human_attribute_name(:tags) %>:</strong></dt>
+          <dt><strong>Tags:</strong></dt>
           <dd><%= @link.tags %></dd>
-          
         </dl>
+
          <%= javascript_include_tag "main/link/show" %>
          <script type="text/javascript">
           hacktavism.Views.show.initialize("<%= @url %>");
@@ -29,6 +29,11 @@
          <div id="disqus_thread"></div>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+    <div class="span1">
+      <%= link_to "UPVOTE", upvote_path(@link.id) %><p>Points: <%= @link.points %></p>
+      <%= link_to "DOWNVOTE", downvote_path(@link.id) %><p>Score: <%= @link.score %></p>
+
     </div>
     <div class="span3">
       <li><h3>Video Description</h3>

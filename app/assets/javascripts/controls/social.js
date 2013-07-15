@@ -16,8 +16,5 @@ $(function() {
     window.open('http://twitter.com/share?text='+encodeURIComponent(page_url)+twitter_handle,'twitter-share-box','toolbar=0,status=0,width=626,height=436'); 
     return false;
   });
+  
 });
-
-
-
-// http://www.reddit.com/submit?title=**SETUP+URL+ENCODED**&text=**PUNCHLINE+URL+ENCODED**+%0D**permalink+to+joke**
