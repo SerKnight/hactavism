@@ -14,20 +14,6 @@ class LinksController < ApplicationController
     attr_accessor :name, :url
   end
 
-  def upvote
-    link = Link.find(params[:id])
-    link.upvote
-    link.save
-    redirect_to link_path(link)
-  end
-
-  def downvote
-    link = Link.find(params[:id])
-    link.downvote
-    link.save
-    redirect_to link_path(link)
-  end
-
   def show
     @link = Link.find(params[:id])
     @tags = @link.tags.gsub(' ', '+').gsub(',', '')
