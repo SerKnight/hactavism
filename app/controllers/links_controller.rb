@@ -34,9 +34,10 @@ class LinksController < ApplicationController
 
     @tweet_text = URI.escape "#{@link.title} => #{@link.content}via #{@Nomadic_Knight}"
     
+    @volunteer_ops = Volunteer.opportunities(@tags)
 
-    @volunteer_option1 = [ VolunteerOption.new("Boys & Girls Club","http://www.bgca.org/whoweare/Pages/FindaClub.aspx") ]
-    @volunteer_option2 = [ VolunteerOption.new("Red Cross Volunteer","http://www.redcross.org/support/volunteer") ]
+    # @volunteer_option1 = [ VolunteerOption.new("Boys & Girls Club","http://www.bgca.org/whoweare/Pages/FindaClub.aspx") ]
+    # @volunteer_option2 = [ VolunteerOption.new("Red Cross Volunteer","http://www.redcross.org/support/volunteer") ]
 
     @url = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&format=json&term=#{@tags}"
   end

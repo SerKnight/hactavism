@@ -44,6 +44,12 @@
           <span class="cause"></span>
         </ul>
       <li><h3>Volunteer Options</h3>
+        <ul><span class="volunteer">
+          <% @volunteer_ops.each do |opp| %>
+            <li><%= link_to opp.organization_name, opp.url, target: "_blank" %></li>         
+        <% end %>
+        </ul>
+        </span>
         <%= render partial: "volunteer_option1", collection: @volunteer_option1 %>
         <%= render partial: "volunteer_option2", collection: @volunteer_option2 %>
     </div>

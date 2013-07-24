@@ -7,11 +7,8 @@ describe "upvoting videos" do
 
   context "when clicking the upvtoe button" do 
 
-    it "adds one point to the video's total" do 
-      visit '/links'
-      save_and_open_page
-      first('a').click
-      expect(page).to have_content(@video.title)
+    xit "adds one point to the video's total" do 
+  
     end
 
   end
