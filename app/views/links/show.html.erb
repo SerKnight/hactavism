@@ -31,27 +31,27 @@
         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
     <div class="span1">
-      <%= link_to "UPVOTE", upvote_path(@link.id) %><p>Points: <%= @link.points %></p>
-      <%= link_to "DOWNVOTE", downvote_path(@link.id) %><p>Score: <%= @link.score %></p>
-
+    <!-- upvotes -->
     </div>
     <div class="span3">
       <li><h3>Video Description</h3>
       <%= @link.description %>
+      <li><h3>Volunteer Options</h3>
+        <dl><span class="volunteer">
+          <% @volunteer_ops.each do |opp| %>
+              <dt><%= opp.volunteer_title %></dt>
+              <dd>
+                <%= link_to opp.organization_name, opp.url, target: "_blank" %>
+              </dd>
+        <% end %>
+        </dl>
       <li><h3>Related Charities</h3>
       <ul><span class="charity"></span>
         <h4>Cause</h4>
           <span class="cause"></span>
         </ul>
-      <li><h3>Volunteer Options</h3>
-        <ul><span class="volunteer">
-          <% @volunteer_ops.each do |opp| %>
-            <li><%= link_to opp.organization_name, opp.url, target: "_blank" %></li>         
-        <% end %>
-        </ul>
-        </span>
-        <%= render partial: "volunteer_option1", collection: @volunteer_option1 %>
-        <%= render partial: "volunteer_option2", collection: @volunteer_option2 %>
+        <hr>  
+      </span>
     </div>
   </div>
 </div>
