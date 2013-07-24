@@ -9,7 +9,8 @@ class Volunteer
 	end
 
 	def self.opportunities(tags)
-		response = Faraday.get "http://www.allforgood.org/api/volopps?key=#{ENV['ALLFORGOODAPIKEY']}&q=#{tags}&num=3&output=json"
+		first_tag = tags.split("+")
+		response = Faraday.get "http://www.allforgood.org/api/volopps?key=#{ENV['ALLFORGOODAPIKEY']}&q=#{first_tag}&num=3&output=json"
 		body = JSON.parse(response.body)
 		items = body["items"]
 		vol_ops = items[0..2]
