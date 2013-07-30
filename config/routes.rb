@@ -2,6 +2,8 @@ Hactavism::Application.routes.draw do
   resources :links
 
   root :to => "links#root"
+
+  match "/auth/twitter/callback" => "sessions#create", via: [:get, :post]
  
   get 'hactavists' => 'links#hactavists'
 

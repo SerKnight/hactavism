@@ -15,6 +15,7 @@ gem 'selenium-webdriver'
 gem 'kaminari'
 gem 'simplecov'
 gem 'underscore-rails'
+gem 'omniauth-twitter'
 
 
 
