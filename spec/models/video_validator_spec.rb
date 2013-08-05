@@ -10,7 +10,7 @@ context "Youtube video validation" do
   end
 
   it "recognizes an invalid YouTube video" do 
-    expect(subject.valid_url?("http://www.youporn.com/watch?v=QSKCZnmh5qg")).to eq false
+    expect(subject.valid_url?("http://www.youtubee.com/watch?v=QSKCZnmh5qg")).to eq false
   end
 
   it "accepts YouTube videos without http:// or wwww. in the url" do 
