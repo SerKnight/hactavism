@@ -20,7 +20,7 @@ class LinksController < ApplicationController
 
     @tweet_text = URI.escape "#{@link.title} => #{@link.content}via #{@Nomadic_Knight}"
     
-    @volunteer_ops = Volunteer.opportunities(@tags)
+    # @volunteer_ops = Volunteer.opportunities(@tags)
 
     @url = "http://api.charitynavigator.org/api/v1/search/?app_key=#{ENV['CHARITY_NAVIGATOR_KEY']}&app_id=#{ENV['CHARITY_NAVIGATOR_APP_ID']}&format=json&term=#{@tags}"
   end

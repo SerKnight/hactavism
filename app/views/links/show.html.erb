@@ -37,13 +37,7 @@
       <li><h3>Video Description</h3>
       <%= @link.description %>
       <li><h3>Volunteer Options</h3>
-        <dl><span class="volunteer">
-          <% @volunteer_ops.each do |opp| %>
-              <dt><%= opp.volunteer_title %></dt>
-              <dd>
-                <%= link_to opp.organization_name, opp.url, target: "_blank" %>
-              </dd>
-        <% end %>
+        
         </dl>
       <li><h3>Related Charities</h3>
       <ul><span class="charity"></span>

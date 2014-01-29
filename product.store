@@ -1,0 +1,225 @@
+---
+products:
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's IcebreakerMerino Wool Apparel
+  expiration: ': 70 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Women's IcebreakerMerino Wool Apparel
+  expiration: ': 70 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Under Armour EyewearPerformance Sunglasses
+  expiration: ': 70 hrs 45 mi'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: GarmontMen's & Women's Footwear
+  expiration: ': 70 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's ElementApparel & Accessories
+  expiration: ': 70 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Women's Element EdenApparel & Accessories
+  expiration: ': 70 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Women's ZootActivewear & Footwear
+  expiration: ': 70 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's ZootActivewear & Footwear
+  expiration: ': 70 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: AmbigApparel
+  expiration: ': 70 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Cycle ComponentsTires, Saddles, & More
+  expiration: ': 142 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: HydrationHydration Packs & Bottles
+  expiration: ': 142 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: VestalWatches
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's Columbia ApparelTechnical Apparel
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Women's Columbia ApparelTechnical Apparel
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Dragon ApparelApparel & Accessories
+  expiration: ': 46 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's NorthwaveCycling Shoes
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Get $25 for Every Friend You InviteWomen's NorthwaveCycling Shoes
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Dragon EyewearPerformance Eyewear
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: RedingtonRods & Waders
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's Everyday ShoesFootwear
+  expiration: ': 118 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Women's Everyday ShoesFootwear
+  expiration: ': 118 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: ContourWaterproof Action Cameras
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's Ocean MindedSandals & More
+  expiration: ': 22 hrs 45 mi'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Brunton/PrimusTech Accessories & More
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: JulboPerformance Sunglasses
+  expiration: ': 22 hrs 45 m'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Women's Ocean MindedSandals
+  expiration: ': 22 hrs 45 mi'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Lolë SwimwearSwimwear
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Lolë ApparelApparel & More
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: SubjektHeadphones
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: YogaRatMats, Towels, & More
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Camp ComfortsTents & Camp Furniture
+  expiration: ': 94 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Stoves & UtensilsCamp Cookware
+  expiration: ': 70 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Camp AccessoriesTrekking Poles & More
+  expiration: ': 70 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Women's SkateHoodies, tees, & more
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's SkateHoodies, tees, & more
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Follow the battle on Facebook!Women's Hiking FootwearTechnical Footwear
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Men's Hiking FootwearTechnical Footwear
+  expiration: ': 22 hrs 45 mi'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Cycle Accessories & ToolsBike Lights, Locks, & More
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: SunglassesNative, SPY, POC, & more
+  expiration: ': 622 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: CroatiaPaddle the Adriatic Sea
+  expiration: ': 94 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Paddle the Adriatic SeaCroatia1 person / 8 days $699
+  expiration: ':94 hrs 45 minsclym'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Ends SoonNew EnglandTrek the Presidential Traverse
+  expiration: ': 22 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Trek the Presidential TraverseNew England1 person / 4 days $499Ends Soon
+  expiration: ':22 hrs 45 minscl'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Saigon to Siem ReapCycle from cities to temples
+  expiration: ': 46 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Cycle from cities to templesSaigon to Siem Reap1 person / 9 days $1499
+  expiration: ':46 hrs 45 minsclym'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Moabride the famous white rim trail
+  expiration: ': 46 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: ride the famous white rim trailMoab1 person / 3 days $650
+  expiration: ':46 hrs 45 minsclym'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: ArgentinaSki world-class powder
+  expiration: ': 46 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Ski world-class powderArgentina1 person / 8 days $2399
+  expiration: ':46 hrs 45 minsclym'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: CanyonlandsRaft the Legendary Cataract Canyon
+  expiration: ': 94 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Raft the Legendary Cataract CanyonCanyonlands1 person / 4 days $999
+  expiration: ':94 hrs 45 minsclym'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Mazatlan to Mexico CityEmbark on an Epic 1000 Mile Tour
+  expiration: ': 214 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Embark on an Epic 1000 Mile TourMazatlan to Mexico City1 person / 22 days
+    $2499
+  expiration: ':214 hrs 45 minscl'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: BajaKayak with Sea Turtles
+  expiration: ': 94 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Kayak with Sea TurtlesBaja1 Person / 5 days $999
+  expiration: ':94 hrs 45 minscly'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Caprock CanyonBackpacking & Horseback Riding
+  expiration: ': 190 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Backpacking & Horseback RidingCaprock Canyon1 person / 3 days $399
+  expiration: ':190 hrs 45 minscly'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Machu PicchuTrek through the Andean Highlands
+  expiration: ': 142 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Trek through the Andean HighlandsMachu Picchu1 person / 7 days $1299
+  expiration: ':142 hrs 45 minscly'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Costa RicaSurf and Find Your Zen
+  expiration: ': 142 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Surf and Find Your ZenCosta Rica2 people / 8 days $1999
+  expiration: ':142 hrs 45 minscl'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: OregonRide World-Class Singletrack
+  expiration: ': 118 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Ride World-Class SingletrackOregon1 person / 3 days $399
+  expiration: ':118 hrs 45 minscly'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: EcuadorExplore the heart of the Amazon
+  expiration: ': 190 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Explore the heart of the AmazonEcuador1 Person / 5 days $559
+  expiration: ':190 hrs 45 minscly'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Bolivia & ArgentinaSip wine & explore the Atacama
+  expiration: ': 286 hrs 45 mins'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Sip wine & explore the AtacamaBolivia & Argentina1 Person / 20 Days $1880
+  expiration: ':286 hrs 45 minsclym'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: ColoradoScale the Rocky Mountains
+  expiration: ': 262 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Scale the Rocky MountainsColorado1 Person / 6 Days $775
+  expiration: ':262 hrs 45 minscly'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: CambodiaDiscover ancient empires
+  expiration: ': 238 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Discover ancient empiresCambodia1 Person / 6 days $912
+  expiration: ':238 hrs 45 minscly'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Yosemite & TahoeDiscover the best of California
+  expiration: ': 142 hrs 45 min'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: Discover the best of CaliforniaYosemite & Tahoe1 Person / 3 days $364
+  expiration: ':142 hrs 45 minscly'
+- !ruby/struct:Ladder::ClymbScraper::ClymbProduct
+  name: 
+  expiration: 
